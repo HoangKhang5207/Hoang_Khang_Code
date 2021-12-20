@@ -10,7 +10,6 @@ void In_Array2(int a[ROW][COL], int m, int n) {
     }
 }
 void Out_Array2(int a[ROW][COL], int m, int n) {
-    int check = 0;
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) 
             printf("%5d", a[i][j]);
