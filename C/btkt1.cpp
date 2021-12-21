@@ -5,9 +5,9 @@
 void menu();
 void menu5();
 void nhap_r_and_h(float &r, float &h);
-float dientichday(float &r, float &h);
-float dientichxq(float &r, float &h);
-float thetich(float &r, float &h);
+float dientichday(float r, float h);
+float dientichxq(float r, float h);
+float thetich(float r, float h);
 void checksole(int n);
 void dtb(float dkt, float dgk, float dck);
 void in_array(int a[], int &n);
@@ -160,15 +160,15 @@ void nhap_r_and_h(float &r, float &h) {
     printf("Moi ban nhap chieu cao h: ");
     scanf("%f", &h);
 }
-float dientichday(float &r, float &h) {
+float dientichday(float r, float h) {
     float S_day = 2 * PI * pow(r, 2);
     return S_day;
 }
-float dientichxq(float &r, float &h) {
+float dientichxq(float r, float h) {
     float S_xq = 2 * PI * r * h;
     return S_xq;
 }
-float thetich(float &r, float &h) {
+float thetich(float r, float h) {
     float V = PI * pow(r, 2) * h;
     return V;
 }
